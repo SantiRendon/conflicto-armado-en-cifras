@@ -54,17 +54,95 @@ El proyecto seguirá las siguientes etapas:
 - **Análisis de datos y visualizaciones en notebooks de Python**
 - **Dashboard interactivo en Power BI**
 
-Este análisis permitirá comprender mejor la dinámica del conflicto armado en Colombia y generar información útil para la toma de decisiones en el ámbito social y gubernamental.
+## 6. Datos del Estudio
 
-## **6. Datos de Ejemplo**
+### 6.1 Datos de Ejemplo
 
-| FECHA_CORTE | NOM_RPT                    | COD_PAIS | PAIS     | COD_ESTADO_DEPTO | ESTADO_DEPTO | PARAM_HECHO | HECHO                             | SEXO       | ETNIA          | DISCAPACIDAD   | CICLO_VITAL | PER_OCU | PER_DECLA | PER_UBIC | PER_SA | EVENTOS |
-| ----------- | -------------------------- | -------- | -------- | ---------------- | ------------ | ----------- | --------------------------------- | ---------- | -------------- | -------------- | ----------- | ------- | --------- | -------- | ------ | ------- |
-| 2022/03/31  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 13               | Bolívar      | 5           | Retención forzada                 | Hombre     | Gitano (RROM)  | Ninguna        | 18-28       | 3       | 4         | 3        | 3      | 3       |
-| 2022/02/28  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 20               | Cesar        | 5           | Atentado con dispositivo plástico | Mujer      | Raizal         | Múltiple       | 61-100      | 1       | -         | -        | 1      | -       |
-| 2022/04/30  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 18               | Caquetá      | 5           | Desplazamiento forzado            | Hombre     | Gitano (RROM)  | Ninguna        | 29-60       | 2       | -         | -        | 2      | -       |
-| 2022/05/31  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 95               | Guaviare     | 5           | Desplazamiento forzado            | Hombre     | Afrocolombiano | Física         | 61-100      | 11      | 7         | 4        | 4      | 12      |
-| 2022/04/30  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 18               | Caquetá      | 2           | Amenaza                           | Hombre     | Indígena       | Por Establecer | 12-17       | 1       | 1         | 1        | 1      | 1       |
-| 2022/01/31  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 19               | Cauca        | 5           | Desplazamiento forzado            | Mujer      | Indígena       | Auditiva       | 61-100      | 57      | 53        | 43       | 36     | 71      |
-| 2022/02/28  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 25               | Cundinamarca | 20          | Violencia Sexual                  | Mujer      | Indígena       | Ninguna        | 29-60       | 1       | -         | 3        | 3      | 1       |
-| 2022/03/31  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 99               | Vichada      | 4           | Desaparición forzada              | No Informa | Ninguna        | Ninguna        | ND          | -       | 1         | -        | -      | -       |
+A continuación, se presenta un fragmento representativo del dataset utilizado en este proyecto:
+
+| FECHA_CORTE | NOM_RPT | COD_PAIS | PAIS | COD_ESTADO_DEPTO | ESTADO_DEPTO | PARAM_HECHO | HECHO | SEXO | ETNIA | DISCAPACIDAD | CICLO_VITAL | PER_OCU | PER_DECLA | EVENTOS |
+|:------------|:--------|:---------|:-----|:-----------------|:-------------|:------------|:------|:-----|:------|:------------|:------------|:--------|:----------|:--------|
+| 2022/03/31 | REPORTE VICTIMAS POR HECHO | 48 | COLOMBIA | 13 | Bolívar | 5 | Retención forzada | Hombre | Gitano (RROM) | Ninguna | 18-28 | 3 | 4 | 3 |
+| 2022/02/28 | REPORTE VICTIMAS POR HECHO | 48 | COLOMBIA | 20 | Cesar | 5 | Atentado con dispositivo plástico | Mujer | Raizal | Múltiple | 61-100 | 1 | - | 1 |
+| 2022/04/30 | REPORTE VICTIMAS POR HECHO | 48 | COLOMBIA | 18 | Caquetá | 5 | Desplazamiento forzado | Hombre | Gitano (RROM) | Ninguna | 29-60 | 2 | - | 2 |
+
+*(Nota: El dataset completo contiene más registros)*
+
+---
+
+### 6.2 Columnas del Dataset
+
+El dataset utilizado contiene la siguiente información:
+
+| Nombre de Columna | Descripción |
+|:------------------|:------------|
+| **FECHA_CORTE** | Fecha de corte a la cual se recolectaron los datos. |
+| **NOM_RPT** | Nombre del reporte consultado. |
+| **COD_PAIS** | Código correspondiente al país donde se registró el hecho victimizante. |
+| **PAIS** | Nombre del país donde ocurrió el hecho victimizante. |
+| **COD_ESTADO_DEPTO** | Código correspondiente a la ubicación geográfica (departamento) consultado. |
+| **ESTADO_DEPTO** | Nombre del departamento donde ocurrió el hecho victimizante. |
+| **VIGENCIA** | Año al que pertenece la estadística. |
+| **PARAM_HECHO** | Código del tipo de hecho victimizante registrado. |
+| **HECHO** | Descripción o nombre del hecho victimizante conforme a la Ley 1448 de 2011. |
+| **SEXO** | Sexo, identidad de género u orientación sexual expresada por la víctima. |
+| **ETNIA** | Pertenencia étnica de la víctima. Valores posibles: Indígena, Gitano(a) ROM, Raizal, Afrocolombiano(a), Palenquero, Ninguna. |
+| **DISCAPACIDAD** | Situación de discapacidad de la víctima. Valores: Ninguna, Auditiva, Visual, Física, Intelectual, Múltiple, Por establecer, Psicosocial. |
+| **CICLO_VITAL** | Intervalo de edades de las víctimas al momento de la fecha de corte. |
+| **PER_OCU** | Número de personas afectadas por un hecho victimizante en el territorio. |
+| **PER_DECLA** | Número de personas que realizaron su declaración oficial como víctimas. |
+| **EVENTOS** | Número de eventos victimizantes registrados (ocurrencia de un hecho a una persona en un lugar y fecha determinada). |
+
+---
+
+### 6.3 Fuentes de Datos
+
+Los datos utilizados en este proyecto provienen de fuentes oficiales y de acceso público:
+
+- [**Unidad para las Víctimas de Colombia** – Publicación de Datos Abiertos](https://www.unidadvictimas.gov.co/publicacion-de-datos-abiertos/)
+- [**Plataforma de Datos Abiertos de Colombia** – Cifras de víctimas por hechos a nivel departamental](https://www.datos.gov.co/Inclusi-n-Social-y-Reconciliaci-n/Cifras-de-V-ctimas-por-Hechos-Departamental/rz2g-mxda/about_data)
+
+---
+
+## 7. Diseño del Esquema
+
+El diseño de la base de datos sigue un modelo relacional que facilita la gestión eficiente de la información relacionada con los hechos victimizantes del conflicto armado en Colombia. Se definieron las siguientes tablas principales:
+
+### 7.1 Tablas y Atributos
+
+1. **Pais**  
+   - `id_pais` (PK) → Identificador único del país.  
+   - `nombre_pais` → Nombre del país.
+
+2. **Departamento**  
+   - `id_departamento` (PK) → Identificador único del departamento.  
+   - `nombre_departamento` → Nombre del departamento.  
+   - `id_pais` (FK) → Relación con la tabla `Pais`, indicando a qué país pertenece.
+
+3. **HechoVictimizante**  
+   - `id_hecho` (PK) → Identificador único del hecho victimizante.  
+   - `nombre_hecho` → Nombre o descripción del hecho victimizante.  
+   - `codigo_hecho` → Código de clasificación del hecho victimizante.
+
+4. **Persona**  
+   - `id_persona` (PK) → Identificador único de la víctima.  
+   - `sexo` → Género de la víctima.  
+   - `etnia` → Grupo étnico de la víctima.  
+   - `discapacidad` → Información sobre discapacidad, si aplica.  
+   - `ciclo_vital` → Rango de edad de la víctima.
+
+5. **EventoVictimizante**  
+   - `id_evento` (PK) → Identificador único del evento victimizante.  
+   - `fecha_corte` → Fecha en la que se registró el evento.  
+   - `id_departamento` (FK) → Relación con `Departamento`, indicando ubicación del evento.  
+   - `id_hecho` (FK) → Relación con `HechoVictimizante`, especificando tipo de hecho registrado.  
+   - `numero_eventos` → Número de eventos de este tipo reportados en la fecha de corte.  
+   - `personas_ocupadas_afectadas` → Número de personas ocupadas afectadas.  
+   - `personas_declarantes` → Número de víctimas que declararon el hecho.  
+   - `personas_ubicadas` → Número de víctimas ubicadas después del evento.  
+   - `personas_sin_asistencia` → Número de víctimas que no recibieron asistencia.
+
+6. **VictimaEvento**  
+   - `id_victima_evento` (PK) → Identificador único del registro de una víctima en un evento.  
+   - `id_persona` (FK) → Relación con `Persona`, indicando quién fue afectado.  
+   - `id_evento` (FK) → Relación con `EventoVictimizante`, indicando en qué evento fue afectado.
