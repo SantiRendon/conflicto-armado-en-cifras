@@ -1,5 +1,7 @@
 # **Análisis de Datos del Conflicto Armado en Colombia: Patrones, Tendencias y Correlaciones**
 
+### REPORTE VICTIMAS POR HECHO, CIFRA DEPARTAMENTAL (SEXO, ETNIA, DISCAPACIDAD, CICLO_VITAL) personas: (Ocurrencia, Declaración, Ubicación, Sujetos Atención y Eventos)
+
 ## **Integrantes del Equipo**
 
 - Santiago Rendón Castrillón
@@ -60,11 +62,11 @@ El proyecto seguirá las siguientes etapas:
 
 A continuación, se presenta un fragmento representativo del dataset utilizado en este proyecto:
 
-| FECHA_CORTE | NOM_RPT | COD_PAIS | PAIS | COD_ESTADO_DEPTO | ESTADO_DEPTO | PARAM_HECHO | HECHO | SEXO | ETNIA | DISCAPACIDAD | CICLO_VITAL | PER_OCU | PER_DECLA | EVENTOS |
-|:------------|:--------|:---------|:-----|:-----------------|:-------------|:------------|:------|:-----|:------|:------------|:------------|:--------|:----------|:--------|
-| 2022/03/31 | REPORTE VICTIMAS POR HECHO | 48 | COLOMBIA | 13 | Bolívar | 5 | Retención forzada | Hombre | Gitano (RROM) | Ninguna | 18-28 | 3 | 4 | 3 |
-| 2022/02/28 | REPORTE VICTIMAS POR HECHO | 48 | COLOMBIA | 20 | Cesar | 5 | Atentado con dispositivo plástico | Mujer | Raizal | Múltiple | 61-100 | 1 | - | 1 |
-| 2022/04/30 | REPORTE VICTIMAS POR HECHO | 48 | COLOMBIA | 18 | Caquetá | 5 | Desplazamiento forzado | Hombre | Gitano (RROM) | Ninguna | 29-60 | 2 | - | 2 |
+| FECHA_CORTE | NOM_RPT                    | COD_PAIS | PAIS     | COD_ESTADO_DEPTO | ESTADO_DEPTO | PARAM_HECHO | HECHO                              | SEXO   | ETNIA         | DISCAPACIDAD | CICLO_VITAL | PER_OCU | PER_DECLA | EVENTOS |
+| :---------- | :------------------------- | :------- | :------- | :--------------- | :----------- | :---------- | :--------------------------------- | :----- | :------------ | :----------- | :---------- | :------ | :-------- | :------ |
+| 2022/03/31  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 13               | Bolívar     | 5           | Retención forzada                 | Hombre | Gitano (RROM) | Ninguna      | 18-28       | 3       | 4         | 3       |
+| 2022/02/28  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 20               | Cesar        | 5           | Atentado con dispositivo plástico | Mujer  | Raizal        | Múltiple    | 61-100      | 1       | -         | 1       |
+| 2022/04/30  | REPORTE VICTIMAS POR HECHO | 48       | COLOMBIA | 18               | Caquetá     | 5           | Desplazamiento forzado             | Hombre | Gitano (RROM) | Ninguna      | 29-60       | 2       | -         | 2       |
 
 *(Nota: El dataset completo contiene más registros)*
 
@@ -74,24 +76,24 @@ A continuación, se presenta un fragmento representativo del dataset utilizado e
 
 El dataset utilizado contiene la siguiente información:
 
-| Nombre de Columna | Descripción |
-|:------------------|:------------|
-| **FECHA_CORTE** | Fecha de corte a la cual se recolectaron los datos. |
-| **NOM_RPT** | Nombre del reporte consultado. |
-| **COD_PAIS** | Código correspondiente al país donde se registró el hecho victimizante. |
-| **PAIS** | Nombre del país donde ocurrió el hecho victimizante. |
-| **COD_ESTADO_DEPTO** | Código correspondiente a la ubicación geográfica (departamento) consultado. |
-| **ESTADO_DEPTO** | Nombre del departamento donde ocurrió el hecho victimizante. |
-| **VIGENCIA** | Año al que pertenece la estadística. |
-| **PARAM_HECHO** | Código del tipo de hecho victimizante registrado. |
-| **HECHO** | Descripción o nombre del hecho victimizante conforme a la Ley 1448 de 2011. |
-| **SEXO** | Sexo, identidad de género u orientación sexual expresada por la víctima. |
-| **ETNIA** | Pertenencia étnica de la víctima. Valores posibles: Indígena, Gitano(a) ROM, Raizal, Afrocolombiano(a), Palenquero, Ninguna. |
-| **DISCAPACIDAD** | Situación de discapacidad de la víctima. Valores: Ninguna, Auditiva, Visual, Física, Intelectual, Múltiple, Por establecer, Psicosocial. |
-| **CICLO_VITAL** | Intervalo de edades de las víctimas al momento de la fecha de corte. |
-| **PER_OCU** | Número de personas afectadas por un hecho victimizante en el territorio. |
-| **PER_DECLA** | Número de personas que realizaron su declaración oficial como víctimas. |
-| **EVENTOS** | Número de eventos victimizantes registrados (ocurrencia de un hecho a una persona en un lugar y fecha determinada). |
+| Nombre de Columna          | Descripción                                                                                                                                 |
+| :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FECHA_CORTE**      | Fecha de corte a la cual se recolectaron los datos.                                                                                          |
+| **NOM_RPT**          | Nombre del reporte consultado.                                                                                                               |
+| **COD_PAIS**         | Código correspondiente al país donde se registró el hecho victimizante.                                                                   |
+| **PAIS**             | Nombre del país donde ocurrió el hecho victimizante.                                                                                       |
+| **COD_ESTADO_DEPTO** | Código correspondiente a la ubicación geográfica (departamento) consultado.                                                               |
+| **ESTADO_DEPTO**     | Nombre del departamento donde ocurrió el hecho victimizante.                                                                                |
+| **VIGENCIA**         | Año al que pertenece la estadística.                                                                                                       |
+| **PARAM_HECHO**      | Código del tipo de hecho victimizante registrado.                                                                                           |
+| **HECHO**            | Descripción o nombre del hecho victimizante conforme a la Ley 1448 de 2011.                                                                 |
+| **SEXO**             | Sexo, identidad de género u orientación sexual expresada por la víctima.                                                                  |
+| **ETNIA**            | Pertenencia étnica de la víctima. Valores posibles: Indígena, Gitano(a) ROM, Raizal, Afrocolombiano(a), Palenquero, Ninguna.              |
+| **DISCAPACIDAD**     | Situación de discapacidad de la víctima. Valores: Ninguna, Auditiva, Visual, Física, Intelectual, Múltiple, Por establecer, Psicosocial. |
+| **CICLO_VITAL**      | Intervalo de edades de las víctimas al momento de la fecha de corte.                                                                        |
+| **PER_OCU**          | Número de personas afectadas por un hecho victimizante en el territorio.                                                                    |
+| **PER_DECLA**        | Número de personas que realizaron su declaración oficial como víctimas.                                                                   |
+| **EVENTOS**          | Número de eventos victimizantes registrados (ocurrencia de un hecho a una persona en un lugar y fecha determinada).                         |
 
 ---
 
@@ -110,39 +112,40 @@ El diseño de la base de datos sigue un modelo relacional que facilita la gesti�
 
 ### 7.1 Tablas y Atributos
 
-1. **Pais**  
-   - `id_pais` (PK) → Identificador único del país.  
+1. **Pais**
+
+   - `id_pais` (PK) → Identificador único del país.
    - `nombre_pais` → Nombre del país.
+2. **Departamento**
 
-2. **Departamento**  
-   - `id_departamento` (PK) → Identificador único del departamento.  
-   - `nombre_departamento` → Nombre del departamento.  
+   - `id_departamento` (PK) → Identificador único del departamento.
+   - `nombre_departamento` → Nombre del departamento.
    - `id_pais` (FK) → Relación con la tabla `Pais`, indicando a qué país pertenece.
+3. **HechoVictimizante**
 
-3. **HechoVictimizante**  
-   - `id_hecho` (PK) → Identificador único del hecho victimizante.  
-   - `nombre_hecho` → Nombre o descripción del hecho victimizante.  
+   - `id_hecho` (PK) → Identificador único del hecho victimizante.
+   - `nombre_hecho` → Nombre o descripción del hecho victimizante.
    - `codigo_hecho` → Código de clasificación del hecho victimizante.
+4. **Persona**
 
-4. **Persona**  
-   - `id_persona` (PK) → Identificador único de la víctima.  
-   - `sexo` → Género de la víctima.  
-   - `etnia` → Grupo étnico de la víctima.  
-   - `discapacidad` → Información sobre discapacidad, si aplica.  
+   - `id_persona` (PK) → Identificador único de la víctima.
+   - `sexo` → Género de la víctima.
+   - `etnia` → Grupo étnico de la víctima.
+   - `discapacidad` → Información sobre discapacidad, si aplica.
    - `ciclo_vital` → Rango de edad de la víctima.
+5. **EventoVictimizante**
 
-5. **EventoVictimizante**  
-   - `id_evento` (PK) → Identificador único del evento victimizante.  
-   - `fecha_corte` → Fecha en la que se registró el evento.  
-   - `id_departamento` (FK) → Relación con `Departamento`, indicando ubicación del evento.  
-   - `id_hecho` (FK) → Relación con `HechoVictimizante`, especificando tipo de hecho registrado.  
-   - `numero_eventos` → Número de eventos de este tipo reportados en la fecha de corte.  
-   - `personas_ocupadas_afectadas` → Número de personas ocupadas afectadas.  
-   - `personas_declarantes` → Número de víctimas que declararon el hecho.  
-   - `personas_ubicadas` → Número de víctimas ubicadas después del evento.  
+   - `id_evento` (PK) → Identificador único del evento victimizante.
+   - `fecha_corte` → Fecha en la que se registró el evento.
+   - `id_departamento` (FK) → Relación con `Departamento`, indicando ubicación del evento.
+   - `id_hecho` (FK) → Relación con `HechoVictimizante`, especificando tipo de hecho registrado.
+   - `numero_eventos` → Número de eventos de este tipo reportados en la fecha de corte.
+   - `personas_ocupadas_afectadas` → Número de personas ocupadas afectadas.
+   - `personas_declarantes` → Número de víctimas que declararon el hecho.
+   - `personas_ubicadas` → Número de víctimas ubicadas después del evento.
    - `personas_sin_asistencia` → Número de víctimas que no recibieron asistencia.
+6. **VictimaEvento**
 
-6. **VictimaEvento**  
-   - `id_victima_evento` (PK) → Identificador único del registro de una víctima en un evento.  
-   - `id_persona` (FK) → Relación con `Persona`, indicando quién fue afectado.  
+   - `id_victima_evento` (PK) → Identificador único del registro de una víctima en un evento.
+   - `id_persona` (FK) → Relación con `Persona`, indicando quién fue afectado.
    - `id_evento` (FK) → Relación con `EventoVictimizante`, indicando en qué evento fue afectado.
