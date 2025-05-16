@@ -76,24 +76,7 @@ A continuación, se presenta un fragmento representativo del dataset utilizado e
 
 El dataset utilizado contiene la siguiente información:
 
-| Nombre de Columna          | Descripción                                                                                                                                 |
-| :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| **FECHA_CORTE**      | Fecha de corte a la cual se recolectaron los datos.                                                                                          |
-| **NOM_RPT**          | Nombre del reporte consultado.                                                                                                               |
-| **COD_PAIS**         | Código correspondiente al país donde se registró el hecho victimizante.                                                                   |
-| **PAIS**             | Nombre del país donde ocurrió el hecho victimizante.                                                                                       |
-| **COD_ESTADO_DEPTO** | Código correspondiente a la ubicación geográfica (departamento) consultado.                                                               |
-| **ESTADO_DEPTO**     | Nombre del departamento donde ocurrió el hecho victimizante.                                                                                |
-| **VIGENCIA**         | Año al que pertenece la estadística.                                                                                                       |
-| **PARAM_HECHO**      | Código del tipo de hecho victimizante registrado.                                                                                           |
-| **HECHO**            | Descripción o nombre del hecho victimizante conforme a la Ley 1448 de 2011.                                                                 |
-| **SEXO**             | Sexo, identidad de género u orientación sexual expresada por la víctima.                                                                  |
-| **ETNIA**            | Pertenencia étnica de la víctima. Valores posibles: Indígena, Gitano(a) ROM, Raizal, Afrocolombiano(a), Palenquero, Ninguna.              |
-| **DISCAPACIDAD**     | Situación de discapacidad de la víctima. Valores: Ninguna, Auditiva, Visual, Física, Intelectual, Múltiple, Por establecer, Psicosocial. |
-| **CICLO_VITAL**      | Intervalo de edades de las víctimas al momento de la fecha de corte.                                                                        |
-| **PER_OCU**          | Número de personas afectadas por un hecho victimizante en el territorio.                                                                    |
-| **PER_DECLA**        | Número de personas que realizaron su declaración oficial como víctimas.                                                                   |
-| **EVENTOS**          | Número de eventos victimizantes registrados (ocurrencia de un hecho a una persona en un lugar y fecha determinada).                         |
+![1747419976748](image/proyectoconflictoarmado/1747419976748.png)
 
 ---
 
