@@ -57,9 +57,7 @@ git pull origin main
 ## Equipo
 
 - **Santiago Rendón Castrillón** – Coordinación general y análisis de datos
-- **José Daniel Orrego Ruiz** – [Rol pendiente]
-- **Kelly Dayanna Hernández** – [Rol pendiente]
-- **Osfary Rojas Vargas** – [Rol pendiente]
+- **Kelly Dayanna Hernández** – Administradora en base de datos y Bussiness Intelligence (BI)
 
 ## Notas Adicionales
 
