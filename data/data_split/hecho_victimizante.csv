@@ -1,17 +1,3 @@
-PARAM_HECHO,HECHO
-1,Acto terrorista / Atentados / Combates / Enfrentamientos / Hostigamientos
-2,Amenaza
-3,Delitos contra la libertad y la integridad sexual en desarrollo del conflicto armado
-4,Desaparición forzada
-5,Desplazamiento forzado
-6,Homicidio
-7,"Minas Antipersonal, Munición sin Explotar y Artefacto Explosivo improvisado"
-8,Secuestro
-9,Tortura
-10,Vinculación de Niños Niñas y Adolescentes a Actividades Relacionadas con grupos armados
-11,Abandono o Despojo Forzado de Tierras
-12,Perdida de Bienes Muebles o Inmuebles
-13,Lesiones Personales Fisicas
-14,Lesiones Personales Psicologicas
-15,Confinamiento
-20,Sin informacion
+version https://git-lfs.github.com/spec/v1
+oid sha256:aab335cfa9da72525170d7bdcbc5ac5119a8941ca7930c83795fb56d256582e2
+size 651
