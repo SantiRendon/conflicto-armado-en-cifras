@@ -16,12 +16,14 @@ SELECT `reportehecho`.`id_reporte_hecho`,
     `reportehecho`.`id_hecho`
 FROM `conflicto_armado`.`reportehecho`;
 
+SELECT `reportegrupo`.`id_reporte_grupo`,
+    `reportegrupo`.`id_grupo_poblacional`,
+    `reportegrupo`.`id_reporte_hecho`
+FROM `conflicto_armado`.`reportegrupo`;
+
 SELECT `grupopoblacional`.`id_grupo_poblacional`,
     `grupopoblacional`.`sexo`,
     `grupopoblacional`.`etnia`,
     `grupopoblacional`.`discapacidad`,
     `grupopoblacional`.`ciclo_vital`
 FROM `conflicto_armado`.`grupopoblacional`;
-
-
-
