@@ -17,7 +17,6 @@ CREATE TABLE HechoVictimizante (
 -- Tabla: ReporteHecho
 CREATE TABLE ReporteHecho (
     id_reporte_hecho INT AUTO_INCREMENT PRIMARY KEY,
-    fecha_corte DATE NOT NULL,
     numero_eventos INT NOT NULL,
     personas_afectadas INT NOT NULL,
     personas_declarantes INT NOT NULL,
