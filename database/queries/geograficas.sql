@@ -51,3 +51,59 @@ JOIN Departamento
 GROUP BY Departamento.nombre_departamento
 ORDER BY total_declarantes ASC;
 
+-- Total de personas ubicadas por departamento
+SELECT 
+    Departamento.nombre_departamento,
+    SUM(ReporteHecho.personas_ubicadas) AS total_ubicadas
+FROM ReporteHecho
+JOIN Departamento 
+    ON ReporteHecho.id_departamento = Departamento.id_departamento
+GROUP BY Departamento.nombre_departamento
+ORDER BY total_ubicadas DESC;
+
+-- Total de personas sujetas a atención por departamento
+SELECT 
+    Departamento.nombre_departamento,
+    SUM(ReporteHecho.personas_sujeto_asistencia) AS total_sujetos_atencion
+FROM ReporteHecho
+JOIN Departamento 
+    ON ReporteHecho.id_departamento = Departamento.id_departamento
+GROUP BY Departamento.nombre_departamento
+ORDER BY total_sujetos_atencion DESC;
+
+-- Número de personas afectadas por sexo y departamento
+SELECT 
+    Departamento.nombre_departamento,
+    GrupoPoblacional.sexo,
+    SUM(ReporteHecho.personas_afectadas) AS total_afectados
+FROM ReporteGrupo
+JOIN GrupoPoblacional ON ReporteGrupo.id_grupo_poblacional = GrupoPoblacional.id_grupo_poblacional
+JOIN ReporteHecho ON ReporteGrupo.id_reporte_hecho = ReporteHecho.id_reporte_hecho
+JOIN Departamento ON ReporteHecho.id_departamento = Departamento.id_departamento
+GROUP BY Departamento.nombre_departamento, GrupoPoblacional.sexo
+ORDER BY Departamento.nombre_departamento, total_afectados DESC;
+
+-- Número de personas afectadas por ciclo vital y departamento
+SELECT 
+    Departamento.nombre_departamento,
+    GrupoPoblacional.ciclo_vital,
+    SUM(ReporteHecho.personas_afectadas) AS total_afectados
+FROM ReporteGrupo
+JOIN GrupoPoblacional ON ReporteGrupo.id_grupo_poblacional = GrupoPoblacional.id_grupo_poblacional
+JOIN ReporteHecho ON ReporteGrupo.id_reporte_hecho = ReporteHecho.id_reporte_hecho
+JOIN Departamento ON ReporteHecho.id_departamento = Departamento.id_departamento
+GROUP BY Departamento.nombre_departamento, GrupoPoblacional.ciclo_vital
+ORDER BY Departamento.nombre_departamento, total_afectados DESC;
+
+-- Número de personas afectadas por tipo de discapacidad y departamento
+SELECT 
+    Departamento.nombre_departamento,
+    GrupoPoblacional.discapacidad,
+    SUM(ReporteHecho.personas_afectadas) AS total_afectados
+FROM ReporteGrupo
+JOIN GrupoPoblacional ON ReporteGrupo.id_grupo_poblacional = GrupoPoblacional.id_grupo_poblacional
+JOIN ReporteHecho ON ReporteGrupo.id_reporte_hecho = ReporteHecho.id_reporte_hecho
+JOIN Departamento ON ReporteHecho.id_departamento = Departamento.id_departamento
+GROUP BY Departamento.nombre_departamento, GrupoPoblacional.discapacidad
+ORDER BY Departamento.nombre_departamento, total_afectados DESC;
+
