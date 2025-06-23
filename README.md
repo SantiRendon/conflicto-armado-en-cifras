@@ -71,7 +71,7 @@ git pull origin main
   Las fuentes originales, procesadas y transformadas están organizadas en [`/data`](./data).
 
 - 📽️ **Presentación del proyecto (pitch)**  
-  Disponible en [`/reports/pitch`](./reports/pitch) o el archivo [`memoria-abierta-presentacion.pdf`](./reports/pitch/memoria-abierta-presentacion.pdf) *(ajusta según cómo esté nombrado)*.
+  Disponible en [`/reports/pitch`](./reports/pitch) o el archivo [`memoria-abierta-presentacion.pdf`](./reports/pitch/memoria-abierta-presentacion.pdf).
 
 
 
