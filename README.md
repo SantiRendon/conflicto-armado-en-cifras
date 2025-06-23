@@ -1,6 +1,8 @@
-# El Conflicto Armado en Cifras: Patrones, Tendencias y Correlaciones del Conflicto Armado en Colombia
+# Memoria Abierta: Datos para Visibilizar el Conflicto Armado en Colombia (2022–2025)
 
-Este proyecto analiza datos del conflicto armado en Colombia desde 2022 hasta 2025, explorando patrones, tendencias y correlaciones mediante análisis de datos y visualización. Utiliza fuentes abiertas para comprender la evolución del conflicto y sus impactos, contribuyendo a la memoria histórica.
+Este repositorio contiene el desarrollo de Memoria Abierta, una iniciativa de análisis y visualización del conflicto armado en Colombia entre 2022 y 2025. A partir de datos abiertos, el proyecto transforma información técnica en una herramienta accesible y comprensible que visibiliza la magnitud e impacto del conflicto sobre la población civil.
+
+El enfoque es ético, social y colaborativo: busca acercar esta realidad a quienes no la han vivido directamente, promoviendo la empatía, la conciencia y la memoria histórica a través de herramientas como Python, MySQL y Power BI.
 
 ## Configuración del Proyecto
 
