@@ -58,32 +58,21 @@ git pull origin main
 
 ## 📁 Recursos del Proyecto
 
-- 📊 **Dashboard interactivo en Power BI**  
-  Disponible en la carpeta [`/reports/figures`](./reports/figures), junto con visualizaciones exportadas.
-
-- 🧾 **Informe final del proyecto**  
-  Puedes encontrarlo en [`/reports`](./reports), incluyendo documentación metodológica y hallazgos clave.
-
-- 📓 **Notebooks de análisis y limpieza de datos**  
-  Accede a los cuadernos Jupyter en [`/notebooks`](./notebooks).
-
-- 📂 **Datos utilizados**  
-  Las fuentes originales, procesadas y transformadas están organizadas en [`/data`](./data).
-
-- 📽️ **Presentación del proyecto (pitch)**  
-  Disponible en [`/reports/pitch`](./reports/pitch) o el archivo [`memoria-abierta-presentacion.pdf`](./reports/pitch/memoria-abierta-presentacion.pdf).
-
-
+- 📊 **Dashboard interactivo en Power BI**Disponible en la carpeta [`/reports/figures`](./reports/figures), junto con visualizaciones exportadas.
+- 🧾 **Informe final del proyecto**Puedes encontrarlo en [`/reports`](./reports), incluyendo documentación metodológica y hallazgos clave.
+- 📓 **Notebooks de análisis y limpieza de datos**Accede a los cuadernos Jupyter en [`/notebooks`](./notebooks).
+- 📂 **Datos utilizados**Las fuentes originales, procesadas y transformadas están organizadas en [`/data`](./data).
+- 📽️ **Presentación del proyecto (pitch)**
+  Disponible en [`/docs/pitch`](./docs/pitch) o el archivo [`memoria-abierta-presentacion.pdf`](./docs/pitch/memoria-abierta-presentacion.pdf).
 
 ## Equipo
 
-- **Santiago Rendón Castrillón** – Análisis de datos, Transformación de datos y Coordinación general 
+- **Santiago Rendón Castrillón** – Análisis de datos, Transformación de datos y Coordinación general
 - **Kelly Dayanna Hernández** – Análisis de datos, Administradora en base de datos y Business Intelligence (BI)
 
 ## Licencia
 
 Este proyecto está disponible bajo la licencia [MIT](LICENSE).
-
 
 ## Notas Adicionales
 
