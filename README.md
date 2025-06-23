@@ -56,11 +56,35 @@ git pull origin main
     └── figures/        # Gráficos y visualizaciones
 ```
 
+## 📁 Recursos del Proyecto
+
+- 📊 **Dashboard interactivo en Power BI**  
+  Disponible en la carpeta [`/reports/figures`](./reports/figures), junto con visualizaciones exportadas.
+
+- 🧾 **Informe final del proyecto**  
+  Puedes encontrarlo en [`/reports`](./reports), incluyendo documentación metodológica y hallazgos clave.
+
+- 📓 **Notebooks de análisis y limpieza de datos**  
+  Accede a los cuadernos Jupyter en [`/notebooks`](./notebooks).
+
+- 📂 **Datos utilizados**  
+  Las fuentes originales, procesadas y transformadas están organizadas en [`/data`](./data).
+
+- 📽️ **Presentación del proyecto (pitch)**  
+  Disponible en [`/reports/pitch`](./reports/pitch) o el archivo [`memoria-abierta-presentacion.pdf`](./reports/pitch/memoria-abierta-presentacion.pdf) *(ajusta según cómo esté nombrado)*.
+
+
+
 ## Equipo
 
-- **Santiago Rendón Castrillón** – Coordinación general y análisis de datos
-- **Kelly Dayanna Hernández** – Administradora en base de datos y Bussiness Intelligence (BI)
+- **Santiago Rendón Castrillón** – Análisis de datos, Transformación de datos y Coordinación general 
+- **Kelly Dayanna Hernández** – Análisis de datos, Administradora en base de datos y Business Intelligence (BI)
+
+## Licencia
+
+Este proyecto está disponible bajo la licencia [MIT](LICENSE).
+
 
 ## Notas Adicionales
 
-> ⚠️ Este proyecto está en desarrollo activo. La documentación se actualizará regularmente. Fecha de finalizacion: [Fecha de finalización pendiente]
+> ✅ Este proyecto fue completado en junio de 2025. La documentación refleja la versión final publicada.
